@@ -7,19 +7,19 @@
 ### Installation directory (Installation prefix)
 # If you don't have root privileges, set this to /home/tentacleman/bloboats/
 # for example, otherwise /. Don't use ~ or other environment variables!
-PREFIX = /mnt/utmp/bloboats
+PREFIX = .
 
 ### Or if you don't want to run make install at all, uncomments the next line
 # and comment the line below. Compile and run with './bin/bloboats'
 #DATADIR = data
 
-DATADIR = $(PREFIX)/usr/games/bloboats/data
+DATADIR = $(PREFIX)/data
 
 ### If you do make install, you may perhaps want to set these
 BINARYDIR = $(PREFIX)/usr/bin
 CONFIGDIR = $(PREFIX)/etc
 
-PRIVATEDIR = ~/.bloboats
+PRIVATEDIR = conf/
 
 
 
@@ -40,7 +40,7 @@ DEBUG = 0
 
 
 #This should probably be DEFAULT
-TARGET = PANDORA
+TARGET = DEFAULT
 
 
 ### Only some random settings below
